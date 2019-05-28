@@ -9,18 +9,17 @@ Install [Homebrew](https://brew.sh/index_ja) and run following commands:
 brew install anyenv
 anyenv init
 echo 'eval "$(anyenv init -)"' >> ~/.bash_profile
-exec $SHELL -l
+source ~/.bash_profile
 anyenv install --init https://github.com/foo/anyenv-install.git
 
 # install goenv and go
 anyenv install goenv
-exec $SHELL -l
+source ~/.bash_profile
 goenv install -l
 goenv install <latest version>
 goenv global <latest version>
-echo 'export GOPATH=$HOME/.go' >> ~/.bash_profile
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bash_profile
-exec $SHELL -l
+source ~/.bash_profile
 
 # install docker
 brew install docker
@@ -44,4 +43,14 @@ docker-compose up -d
 
 ## STEP2
 
-Refer to the [document](https://beego.me/docs/install#installing-beego) and install Beego.
+Refer to the document and install [Beego](https://beego.me/docs/install#installing-beego) and [bee tool](https://beego.me/docs/install/bee.md#installing-bee-tool).
+
+## STEP3
+
+Check GOPATH with following command:
+
+```
+echo $GOPATH
+```
+
+Refer to the [document](https://beego.me/docs/quickstart/#quickstart) and implement the contents of the quick start.
