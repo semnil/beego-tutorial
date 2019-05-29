@@ -64,3 +64,8 @@ Select following options:
 
 Refer to the [document](https://beego.me/docs/quickstart/#quickstart) and implement the contents of the quick start.  
 After making changes to the source code, check changes on the local environment and redeploy to Elastic Beanstalk.
+If you want to see the log of local environment, please execute the following command:
+
+```
+docker-compose logs -f
+```
