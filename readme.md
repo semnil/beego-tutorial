@@ -47,7 +47,8 @@ Deploy to AWS Elastic Beanstalk.
 ./make_bundle.sh
 ```
 
-This command output a **bundle.zip** file.
+Above command output a **bundle.zip** file.
+This process means [create an application source bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html).
 
 ### Create environment
 
