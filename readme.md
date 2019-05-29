@@ -16,7 +16,7 @@ brew install docker-compose
 
 ## STEP1
 
-Start and initialize containers.
+Build and start containers.
 
 ```
 docker-compose up -d
@@ -26,7 +26,12 @@ docker-compose up -d
 
 Create a new application.
 
+```
 docker-compose exec app bash
-bee api quickstart -driver=mysql -conn=root:password@tcp(db:3306)/quickstart
+bee new quickstart
+# Enter "yes" to overwrite.
+```
+
+## STEP3
 
 Refer to the [document](https://beego.me/docs/quickstart/#quickstart) and implement the contents of the quick start.

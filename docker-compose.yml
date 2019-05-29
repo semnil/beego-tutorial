@@ -8,19 +8,21 @@ services:
       - 8080:8080
     volumes:
       - ./quickstart:/go/src/quickstart
-    depends_on:
-      - 'db'
-  db:
-    container_name: beego-tutorial-mysql
-    image: mysql:5.7
-    volumes:
-      - ./db/conf:/etc/mysql/conf.d
-      - ./db/logs:/var/log/mysql
-      - ./db/init:/docker-entrypoint-initdb.d
-      - ./db/data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: quickstart
-      TZ: Asia/Tokyo
-    ports:
-      - 3306:3306
+#    depends_on:
+#      - 'db'
+#  db:
+#    container_name: beego-tutorial-mysql
+#    image: mysql:5.7
+#    volumes:
+#      - ./db/conf:/etc/mysql/conf.d
+#      - ./db/logs:/var/log/mysql
+#      - ./db/init:/docker-entrypoint-initdb.d
+#      - ./db/data:/var/lib/mysql
+#    environment:
+#      MYSQL_DATABASE: quickstart
+#      MYSQL_ROOT_PASSWORD: password
+#      MYSQL_USER: quickstart
+#      MYSQL_PASSWORD: password
+#      TZ: Asia/Tokyo
+#    ports:
+#      - 3306:3306
