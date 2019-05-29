@@ -4,7 +4,7 @@ ENV GOPATH /go
 ENV PATH $PATH:$GOPATH/bin
 
 RUN mkdir -p /go/src/quickstart
-COPY quickstart /go/src/quickstart
+COPY ../quickstart /go/src/quickstart
 WORKDIR /go/src/
 
 RUN go get github.com/astaxie/beego

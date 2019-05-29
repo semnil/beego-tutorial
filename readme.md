@@ -30,8 +30,36 @@ Create a new application.
 docker-compose exec app bash
 bee new quickstart
 # Enter "yes" to overwrite.
+exit
+# load created application
+docker-compose restart
 ```
+
+Access `http://localhost:8080` and check running application.
+
+## STEP4
+
+Deploy to AWS Elastic Beanstalk.
+
+### Make source bundle
+
+```
+./make_bundle.sh
+```
+
+This command output a **bundle.zip** file.
+
+### Create environment
+
+Refer to an [AWS document](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications.html).
+Select following options:
+
+- Platform : Docker
+- Application code : Upload your code
+  - Source code origin : Local File (and select **bundle.zip** file)
+
 
 ## STEP3
 
 Refer to the [document](https://beego.me/docs/quickstart/#quickstart) and implement the contents of the quick start.
+After making changes to the source code, let's redeploy to Elastic Beanstalk.
