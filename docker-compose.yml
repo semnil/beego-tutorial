@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build:
-      context: ./quickstart
+      context: .
       dockerfile: Dockerfile
     ports:
       - 8080:8080
@@ -20,9 +20,7 @@ services:
       - ./db/data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: beego
-      MYSQL_USER: beego
-      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: quickstart
       TZ: Asia/Tokyo
     ports:
       - 3306:3306
