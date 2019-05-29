@@ -1,0 +1,28 @@
+package controllers
+
+import (
+	"github.com/astaxie/beego"
+)
+
+type MainController struct {
+	beego.Controller
+}
+
+func (c *MainController) Get() {
+	c.Data["Website"] = "beego.me"
+	c.Data["Email"] = "astaxie@gmail.com"
+	c.TplName = "index.tpl"
+}
+
+
+type UserController struct {
+	beego.Controller
+}
+
+func (c *UserController) Get() {
+	c.Data["Website"] = "beego.me"
+	c.Data["Email"] = "astaxie@gmail.com"
+	c.Data["Title"] = "Welcome to User page"
+	c.Data["Description"] = "This is /user page."
+	c.TplName = "user.tpl"
+}
