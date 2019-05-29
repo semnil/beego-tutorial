@@ -63,4 +63,4 @@ Select following options:
 ## STEP3
 
 Refer to the [document](https://beego.me/docs/quickstart/#quickstart) and implement the contents of the quick start.  
-After making changes to the source code, run `docker-compose restart` command to check changes and redeploy to Elastic Beanstalk.
+After making changes to the source code, check changes on the local environment and redeploy to Elastic Beanstalk.
