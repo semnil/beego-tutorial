@@ -8,7 +8,7 @@ Append a following line to the Dockerfile:
 RUN go get github.com/aws/aws-xray-sdk-go/plugins/beanstalk
 ```
 
-Append a following line to import section of quickstart/controllers/default.go:
+Append a following line to import section of quickstart/main.go:
 
 ```
 _ "github.com/aws/aws-xray-sdk-go/plugins/ecs"
@@ -21,8 +21,8 @@ _ "github.com/aws/aws-xray-sdk-go/plugins/ecs"
 
 ```
 # docker login
-docker build --tag=<user_name>/bee-tutorial .
-docker push <user_name>/bee-tutorial
+docker build --tag=<user_name>/beego-tutorial .
+docker push <user_name>/beego-tutorial
 ```
 
 *<user_name>* is your user name of Docker Hub.

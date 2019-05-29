@@ -5,8 +5,8 @@
 
 ```
 docker login
-docker build --tag=<user_name>/bee-tutorial .
-docker push <user_name>/bee-tutorial
+docker build --tag=<user_name>/beego-tutorial .
+docker push <user_name>/beego-tutorial
 ```
 
 *<user_name>* is your user name of Docker Hub.
