@@ -37,4 +37,4 @@ phases:
 artifacts:
   type: zip
   files:
-    - '**/*'
+    - 'Dockerrun.aws.json'
