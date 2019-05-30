@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/astaxie/beego"
 	"github.com/aws/aws-xray-sdk-go/xray"
-	_ "github.com/aws/aws-xray-sdk-go/plugins/beanstalk"
+	_ "github.com/aws/aws-xray-sdk-go/plugins/ecs"
 )
 
 type MainController struct {

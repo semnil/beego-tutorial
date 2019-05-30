@@ -13,7 +13,7 @@ Import X-Ray SDK to the application.
 Append a following line to the Dockerfile:
 
 ```
-RUN go get github.com/aws/aws-xray-sdk-go/plugins/beanstalk
+RUN go get github.com/aws/aws-xray-sdk-go/plugins/ecs
 ```
 
 Append a following line to import section of quickstart/controllers/default.go:
