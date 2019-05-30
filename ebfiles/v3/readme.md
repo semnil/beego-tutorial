@@ -50,3 +50,7 @@ Add X-Ray container and some settings to environment (Modify a [Dockerrun.aws.js
 
 ## STEP6
 Redeploy to running environment (Upload new Dockerrun.aws.json).
+
+
+## STEP7
+Access this site and check some traces in the X-Ray console.
