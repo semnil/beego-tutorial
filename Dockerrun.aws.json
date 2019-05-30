@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "app",
-      "image": "semnil/beego-tutorial",
+      "image": "hassmo/beego-tutorial",
       "essential": true,
       "memory": 512,
       "portMappings": [
@@ -15,8 +15,8 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-region": "ap-northeast-1",
-          "awslogs-group": "/aws/elasticbeanstalk/beego-tutorial"
+          "awslogs-region": "us-east-2",
+          "awslogs-group": "/aws/elasticbeanstalk/beego-tutorial-ogido"
         }
       },
       "environment": [
