@@ -20,6 +20,7 @@
         }
       },
       "environment": [
+        { "name" : "AWS_XRAY_TRACING_NAME", "value" : "beego-tutorial" },
         { "name" : "AWS_XRAY_DAEMON_ADDRESS", "value" : "xray-daemon:2000" }
       ],
       "links": [
