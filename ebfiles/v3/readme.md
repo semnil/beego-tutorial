@@ -9,7 +9,7 @@ Create a CloudWatch Log Stream.
 Attach managed policy ([AWSXRayDaemonWriteAccess](https://docs.aws.amazon.com/xray/latest/devguide/xray-permissions.html#xray-permissions-managedpolicies)) to `aws-elasticbeanstalk-ec2-role`.
 
 ## STEP3
-Import X-Ray SDK to the application.  
+[Implement](https://github.com/aws/aws-xray-sdk-go#quick-start) X-Ray SDK to the application.  
 Append a following line to the Dockerfile:
 
 ```
