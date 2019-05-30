@@ -11,11 +11,11 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
-	_, subSeg := xray.BeginSubsegment(context.Background(), "/")
+	_, seg := xray.BeginSegment(nil, "/")
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.TplName = "index.tpl"
-	subSeg.Close(nil)
+	seg.Close(nil)
 }
 
 
@@ -24,11 +24,11 @@ type UserController struct {
 }
 
 func (c *UserController) Get() {
-	_, subSeg := xray.BeginSubsegment(context.Background(), "/user")
-	subSeg.Close(nil)
+	_, seg := xray.BeginSegment(nil, "/user")
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.Data["Title"] = "Welcome to User page"
 	c.Data["Description"] = "This is /user page."
 	c.TplName = "user.tpl"
+	seg.Close(nil)
 }
