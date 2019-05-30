@@ -4,6 +4,9 @@ import (
 	"testing"
 )
 
-func TestExampleFailed(t *testing.T) {
-	t.Fatal("failed test")
+//func TestExampleFailed(t *testing.T) {
+//	t.Fatal("failed test")
+//}
+
+func TestExampleSuccess(t *testing.T) {
 }
