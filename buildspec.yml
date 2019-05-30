@@ -7,7 +7,9 @@ env:
     LOGIN_PASSWORD: /CodeBuild/dockerLoginPassword
 
 phases:
-#  install:
+  install:
+    runtime-versions:
+      golang: 1.12
 #    commands:
 #      - echo Entered the install phase...
 #      - apt-get update -y
