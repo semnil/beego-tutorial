@@ -21,13 +21,13 @@ Append a following line to import section of quickstart/controllers/default.go:
 ```
 "context"
 "github.com/aws/aws-xray-sdk-go/xray"
-_ "github.com/aws/aws-xray-sdk-go/plugins/ecs"
+_ "github.com/aws/aws-xray-sdk-go/plugins/beanstalk"
 ```
 
 Append a following line into function of quickstart/controllers/default.go:
 
 ```
-_, seg := xray.BeginSegment(c, "/")
+_, seg := xray.BeginSegment(context.Background(), "/")
 seg.Close(nil)
 ```
 
