@@ -20,7 +20,7 @@ phases:
     commands:
       - echo Entered the test phase...
       - echo Test started on `date`
-      - go test -v tests/default_test.go
+      - go test ./...
     finally:
       - echo This always runs even if the test command fails
 #  post_build:
