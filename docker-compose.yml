@@ -6,8 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:8080
+      - 2345:2345
     volumes:
-      - ./quickstart:/go/src/quickstart
+      - ./go/src//quickstart:/go/src/quickstart
 #    depends_on:
 #      - 'db'
 #  db:
