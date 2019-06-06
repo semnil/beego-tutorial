@@ -8,7 +8,7 @@ Attach managed policy ([AWSXRayDaemonWriteAccess](https://docs.aws.amazon.com/xr
 Append a following line to the [Dockerfile](../../Dockerfile):
 
 ```
-RUN go get github.com/aws/aws-xray-sdk-go/plugins/ecs
+RUN go get github.com/aws/aws-xray-sdk-go/...
 ```
 
 Append a following line to import section of quickstart/controllers/default.go:
@@ -16,7 +16,7 @@ Append a following line to import section of quickstart/controllers/default.go:
 ```
 "context"
 "github.com/aws/aws-xray-sdk-go/xray"
-_ "github.com/aws/aws-xray-sdk-go/plugins/beanstalk"
+_ "github.com/aws/aws-xray-sdk-go/plugins/ecs"
 ```
 
 Append a following line into function of quickstart/controllers/default.go:

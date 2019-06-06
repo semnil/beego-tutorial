@@ -18,7 +18,7 @@ Create a CloudWatch Log Stream.
 ## STEP3
 Edit a [Dockerrun.aws.json](Dockerrun.aws.json) file.
 Please rewrite the following values according to your environment:
-- <user_name> : Your Docker hub username
+- <user_name> : Your user name of Docker Hub
 - <your_region> : Region where you created CloudWatch Log Stream
 
 ## STEP4
