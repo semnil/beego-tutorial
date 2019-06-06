@@ -40,11 +40,15 @@ docker push <user_name>/beego-tutorial
 *<user_name>* is your user name of Docker Hub.
 
 ## STEP5
-Add X-Ray container and some settings to environment (Modify a [Dockerrun.aws.json](https://docs.aws.amazon.com/ja_jp/xray/latest/devguide/xray-daemon-ecs.html)).
+Add X-Ray container and some settings to environment.  
+Edit a [Dockerrun.aws.json](Dockerrun.aws.json) file.  
+Please rewrite the following values according to your environment:
+- <user_name> : Your user name of Docker Hub
+- <your_region> : Region where you created CloudWatch Log Stream
 
 
 ## STEP6
-Redeploy to running environment (Upload new Dockerrun.aws.json).
+Redeploy to running environment (Upload new `Dockerrun.aws.json`).
 
 
 ## STEP7

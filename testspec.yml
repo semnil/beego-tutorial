@@ -32,4 +32,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - 'Dockerrun.aws.json'
+    - 'contents/c3/Dockerrun.aws.json'
+  discard-paths: yes
