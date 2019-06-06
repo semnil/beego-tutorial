@@ -12,6 +12,10 @@ docker push <user_name>/beego-tutorial
 *<user_name>* is your user name of Docker Hub.
 
 ## STEP2
+Create a CloudWatch Log Stream.  
+`/aws/elasticbeanstalk/beego-tutorial`
+
+## STEP3
 Create application and deploy environment to Elastic Beanstalk.
 Select following options and refer [AWS document](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html#create_deploy_docker_ecstutorial_deploy):
 

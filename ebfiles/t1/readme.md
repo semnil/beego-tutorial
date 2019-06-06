@@ -1,4 +1,6 @@
 # beego-tutorial
+In this tutorial, you create a development environment that runs on docker container in the local environment.  
+In addition, deploy the created application to AWS Elastic Beanstalk (from STEP3).
 
 ## STEP0
 
@@ -15,8 +17,8 @@ brew install docker-compose
 ```
 
 ## STEP1
-
-Build and start containers.
+Please git clone this project.  
+After moving into the project directory, execute the following command to build and start the container.
 
 ```
 docker-compose up -d
@@ -24,14 +26,17 @@ docker-compose up -d
 
 ## STEP2
 
-Create a new application.
+The created container is empty.  
+Create a new application with Beego web application framework.
 
 ```
+# Go inside the container
 docker-compose exec app bash
-bee new quickstart
+# Create a new application
 # Enter "yes" to overwrite.
+bee new quickstart
 exit
-# load created application
+# Load created application
 docker-compose restart
 ```
 

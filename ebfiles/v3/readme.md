@@ -1,10 +1,5 @@
 # Enable X-Ray
 
-## STEP1
-Create a CloudWatch Log Stream.  
-`/aws/elasticbeanstalk/beego-tutorial`
-
-
 ## Step2
 Attach managed policy ([AWSXRayDaemonWriteAccess](https://docs.aws.amazon.com/xray/latest/devguide/xray-permissions.html#xray-permissions-managedpolicies)) to `aws-elasticbeanstalk-ec2-role`.
 
