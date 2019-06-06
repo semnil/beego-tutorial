@@ -5,7 +5,7 @@ Attach managed policy ([AWSXRayDaemonWriteAccess](https://docs.aws.amazon.com/xr
 
 ## STEP3
 [Implement](https://github.com/aws/aws-xray-sdk-go#quick-start) X-Ray SDK to the application.  
-Append a following line to the Dockerfile:
+Append a following line to the [Dockerfile](../../Dockerfile):
 
 ```
 RUN go get github.com/aws/aws-xray-sdk-go/plugins/ecs
