@@ -16,9 +16,15 @@ Create a CloudWatch Log Stream.
 `/aws/elasticbeanstalk/beego-tutorial`
 
 ## STEP3
+Edit a [Dockerrun.aws.json](Dockerrun.aws.json) file.
+Please rewrite the following values according to your environment:
+- <user_name> : Your Docker hub username
+- <your_region> : Region where you created CloudWatch Log Stream
+
+## STEP4
 Create application and deploy environment to Elastic Beanstalk.
 Select following options and refer [AWS document](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html#create_deploy_docker_ecstutorial_deploy):
 
 - Platform : Multi-container Docker
 - Application code : Upload your code
-  - Source code origin : Local File (zip compressed Dockerrun.aws.json)
+  - Source code origin : Local File (zip compressed `Dockerrun.aws.json`)
