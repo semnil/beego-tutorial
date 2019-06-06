@@ -1,4 +1,4 @@
-# beego-tutorial
+# Create a web application with Beego framework and deploy an application with AWS Elastic Beanstalk
 In this tutorial, you create a development environment that runs on docker container in the local environment.  
 In addition, deploy the created application to AWS Elastic Beanstalk (from STEP3).
 
